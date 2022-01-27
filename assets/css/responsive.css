@@ -1,0 +1,146 @@
+/* Mobile and Tablet */
+@media (max-width: 1024px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .show-on-mobile-tablet {
+        display: block;
+    }
+
+    :root {
+        --header-height: 54px;
+        --header-navbar-center: 54px;
+    }
+
+    /* Header for mobile */
+    /* .header__navbar-center--mobile  {
+        /* background-color: #000; */
+        /* color: #fff;  */
+    /* } */ 
+
+    .header__navbar-center--mobile .header__center-menu {
+        color: #fff;
+    }
+
+    .header__navbar-center--mobile .header__center-menu i {
+        font-size: 2.2rem;
+    }
+
+    .header__navbar-center {
+        padding: 0 16px;
+    }
+
+    .header__center-menu {
+        margin-right: 0;
+    }
+    
+    .header__navbar-center--mobile-background {
+        background-color: #000;
+    }
+
+
+        /* Logo-sm và header__mobile-search  */
+    .header__center-logo-sm-text {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--white-color);
+    }
+
+    .header__center-logo-sm-icon {
+        font-size: 2rem;
+    }
+
+    .header__center-logo-sm-heading {
+        margin-left: 8px;
+        font-size: 2.8rem;
+        font-weight: 600;
+        letter-spacing: 1.4px;
+
+    }
+
+    .header__mobile-search {
+
+    }
+
+    .header__mobile-search-icon {
+        color: var(--white-color);
+        font-size: 2.3rem;
+
+    }
+
+
+        
+
+
+}   
+
+/* Tablet */
+@media (mix-width: 740px) and (max-width: 1024px) {
+  
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .pagination-item {
+        margin: 0;
+    }
+    .header__center-logo-sm-heading {
+        font-size: 2rem;
+    }
+
+    .slide__heading {
+        margin: 20px 0 30px;
+    }
+
+    .slide__lists {
+        margin: 0 16px 10px;
+    }
+
+    .content {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .footer__content {
+        padding: 0 16px;
+    }
+
+    .footer__heading {
+        margin: 14px 0;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .footer-item__link {
+        justify-content: center;
+    }
+
+    .footer__download {
+        justify-content: center;
+    }
+
+    .footer__download-apps {
+        flex: unset
+    }
+
+    .footer__download-app-link {
+        display: block;
+        padding: 2px 8px;
+    }
+
+    .footer__bottom {
+        text-align: center;
+    }
+
+}
+
+/* PC */
+@media (min-width: 1025px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+

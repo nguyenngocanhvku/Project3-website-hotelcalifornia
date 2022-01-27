@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <title>Nhà Hàng Âu</title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="grid__border hide-on-mobile-tablet">
+                <div class="grid wide ">
+                    <div class="header__navbar">
+                        <div class="header__navbar-list">
+                            <div class="header__navbar-item">
+                                <a href="" class="header__navbar-page">About</a>
+                                <a href="" class="header__navbar-page">Book Homestay</a>
+                                <a href="" class="header__navbar-page">Host</a>
+                            </div>
+                            
+                            <div class="header__navbar-item">
+                                <div class="header__navbar-search-wrap">
+                                    <div class="header__navbar-search">
+                                        <input type="text" name="" class="header__navbar-search-input" placeholder="Search..">
+                                        <a href="#" class="header__navbar-search-link">
+                                            <i class="header__navbar-search-icon ti-search"></i>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="header__navbar-login">
+                                            <i class="header__navbar-login-icon ti-lock"></i>
+                                            <span class="header__navbar-login-name">Login</span>
+                                
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__navbar-center--mobile-background">
+                <div class="grid wide">
+                    <div class="header__navbar-center header__navbar-center--mobile">
+                        <a href="" class="header__center-menu">
+                            <i class="header__center-menu-icon ti-menu"></i>
+                        </a>    
+                        <h1 class="header__center-heading hide-on-mobile-tablet">
+                            <a href="" class="header__center-heading-link">Hotel California  </a>
+                        </h1>
+                        <div class="header__center-socials hide-on-mobile-tablet">
+                            <a href=""><i class="header__center-socials-icon ti-facebook"></i>
+                            </a>    
+                            <a href=""><i class="header__center-socials-icon ti-twitter-alt"></i>
+                            </a>    
+                            <a href=""><i class="header__center-socials-icon ti-youtube"></i>
+                            </a>    
+                            <a href=""><i class="header__center-socials-icon ti-instagram"></i>
+                            </a>
+                        </div>  
+
+                        <a href="" class="header__center-logo-sm-text hide-on-pc">
+                            <i class="header__center-logo-sm-icon fas fa-hotel"></i>
+                            <h1 class="header__center-logo-sm-heading">Hotel Califonia</h1>
+                        </a>
+
+                        <label for="mobile-search-checkbox" class="header__mobile-search hide-on-pc">
+                            <i class="header__mobile-search-icon fas fa-search"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="header__navbar-bottom hide-on-mobile-tablet">
+                    <div class="grid wide">
+                        <ul class="navbar-bottom-list">
+                            <li class="navbar-bottom__item"><a href="#">HOME</a></li>
+                            <li class="navbar-bottom__item"><a href="#">HOTEL REVIEW</a></li>
+                            <li class="navbar-bottom__item"><a href="#">HOMESTAY REVIEW</a></li>
+                            <li class="navbar-bottom__item"><a href="#">FOODS</a></li>
+                            <li class="navbar-bottom__item"><a href="#">CULTURES</a></li>
+                            <li class="navbar-bottom__item"><a href="#">TRAVELHOLIC</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="grid wide">
+                <div class="slide">
+                    <h1 class="slide__heading">Life Is A Journey</h1>
+                    <div class="slide__lists">
+                        <img class="slide__list-item" src="./assets/images/house1.jpg" style="width:100%">
+                        <img class="slide__list-item" src="./assets/images/house2.jpg" style="width:100%">
+                        <img class="slide__list-item" src="./assets/images/house3.png" style="width:100%">
+                    </div>
+                </div>
+                <script>    
+                    var myIndex = 0;
+                    carousel();
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("slide__list-item");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                    }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 3000); // Change image every 2 seconds
+                    }
+                </script>
+        </div>
+        
+        <div class="content">
+            <!-- Row 1 -->
+            <div class="grid wide ">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://nhadepsang.com.vn/images/2017/08/20-hinh-anh-noi-bat-cho-mau-nha-dep-1-tang-o-nong-thon-2.jpg);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">Take her out for the weekend according to any schedule, every girl will love it</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://neohouse.vn/wp-content/uploads/2020/06/biet-thu-dep-nhat-viet-nam-3.jpg);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">The morder house that gen Z used to live nowaday</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://noithattrevietnam.com/uploaded/Kien-thuc-nha-dep/hinh-anh-nha-2-tang-mai-thai/19-images-about-houses-casas-on-pinterest-house-design-luxury-beautiful-home-design-1024x619.jpg);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">Have a great weekend and have been at the 3 most attractive entertainment complexes in Saigon</h2>
+                                <p class="home-product-item-desc">The Little Thao Dien The opening for three suggestions for a famous entertainment complex in Saigon belongs to The Little...  </p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://www.thehousedesigners.com/images/plans/AMD/import/4338/4338_front_exterior_6304.jpg);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">The comfort houst in India will make you happy about the construction</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://static.dezeen.com/uploads/2020/02/house-in-the-landscape-niko-arcjitect-architecture-residential-russia-houses-khurtin_dezeen_2364_hero.jpg);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">Take a trip to go to the house in Dubai which is very beautiful</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://www.abc.net.au/news/image/9184428-3x2-940x627.jpg);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">Top 10 House that is the most expensive in the world</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXVzdHJhbGlhbiUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">With 10000$ you can rent this house for a year without any electric bill the whole year.</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://www.gannett-cdn.com/presto/2021/05/05/PDTN/1b12f37d-41c6-4a7f-babc-0d5c376a9fc8-1_1_of_38.jpg?crop=5367,3019,x340,y0&width=3200&height=1801&format=pjpg&auto=webp);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">How to choose a better house to live forever</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <!-- Product item -->
+                        <a href="#" class="home-product-item-link">
+                            <div class="home-product-item__img" style="background-image: url(https://www.realestate.com.au/blog/images/1024x768-fit,progressive/2020/06/12000230/capi_523124ad1f40ad46cc1e291527b6eda6_732873c5a344266f7eb97b3dbf186da0.jpeg);">
+                                <span class="home-product-item__title">TRAVELHOLIC</span>
+                            </div>
+                            
+                            <div class="home-product-item-body">
+                                <h2 class="home-product-item__heading">The Biggest Mirror House In the world</h2>
+                                <p class="home-product-item-desc">The weather at the beginning of winter will be cold and the sun will be gentle and gentle. It is...</p>
+                                <div class="home-product-item__detail">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> TIỂU QUỲNH</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> <!--row 1-->
+
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="col l-8">
+                        <!-- Product 2 -->
+                        <div class="row mb-30">
+                            <div class="col l-6 m-6 c-12">
+                                <a href="#" class="home-product-item__img" style="background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/08/What-to-eat-in-the-rain-in-Saigon-350x250.jpg);">
+                                    <span class="home-product-item__title-top">TRAVELHOLIC</span>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <a href="" class="home-product-item__row2-link">
+                                    <h2 class="home-product-item__row2-heading">What to eat in the rain in Saigon?</h2>
+                                </a>
+                                <div class="home-product-item__detail mt-12 mb-16">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name">Huyền nguyễn</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                    <div class="home-product-item__comment">
+                                        <i class="home-product-item__comment-icon ti-comment"></i>
+                                        <div class="home-product-item__comment-quantity">0</div>
+                                    </div>
+                                </div>
+                                <p class="home-product-item-desc">Porridge In Saigon, it is very easy to see blood porridge and heart porridge with an affordable price of 10,000 VND - 20,000 VND / bowl. The dish looks easy...</p>
+                                <a href="#" class="home-product-item__btn">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="row mb-30">
+                            <div class="col l-6 m-6 c-12">
+                                <a href="#" class="home-product-item__img" style="background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/08/3-street-names-are-often-mispronounced-in-Hanoi-350x250.jpeg);">
+                                    <span class="home-product-item__title-top">TRAVELHOLIC</span>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <a href="" class="home-product-item__row2-link">
+                                    <h2 class="home-product-item__row2-heading">3 street names are often mispronounced in Hanoi</h2>
+                                </a>
+                                <div class="home-product-item__detail mt-12 mb-16">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> NA</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                    <div class="home-product-item__comment">
+                                        <i class="home-product-item__comment-icon ti-comment"></i>
+                                        <div class="home-product-item__comment-quantity">0</div>
+                                    </div>
+                                </div>
+                                <p class="home-product-item-desc">Perhaps no less than once Hanoians and tourists have heard the names of these streets and surely many people have misread the names of the 3 streets below, try to... </p>
+                                <a href="#" class="home-product-item__btn">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Product 2 -->
+                         <div class="row mb-30">
+                            <div class="col l-6 m-6 c-12">
+                                <a href="#" class="home-product-item__img" style="background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/08/Saigon-snails-and-the-rustic-but-generous-culinary-delights-of-350x250.jpg);">
+                                    <span class="home-product-item__title-top">TRAVELHOLIC</span>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <a href="" class="home-product-item__row2-link">
+                                    <h2 class="home-product-item__row2-heading">Saigon snails and the rustic but generous culinary delights of Southerners</h2>
+                                </a>
+                                <div class="home-product-item__detail mt-12 mb-16">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> NA</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                    <div class="home-product-item__comment">
+                                        <i class="home-product-item__comment-icon ti-comment"></i>
+                                        <div class="home-product-item__comment-quantity">0</div>
+                                    </div>
+                                </div>
+                                <p class="home-product-item-desc">For the people of Saigon, snails are not only a snack but sometimes can also replace lunch and dinner. Usually, snail shops are open from afternoon until late at night....</p>
+                                <a href="#" class="home-product-item__btn">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Product 2 -->
+                         <div class="row mb-30">
+                            <div class="col l-6 m-6 c-12">
+                                <a href="#" class="home-product-item__img" style="background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/08/7-tourist-attractions-near-Saigon-only-need-1-million-to-350x250.jpg);">
+                                    <span class="home-product-item__title-top">TRAVELHOLIC</span>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <a href="" class="home-product-item__row2-link">
+                                    <h2 class="home-product-item__row2-heading">7 tourist attractions near Saigon, only need 1 million to go for the New Year</h2>
+                                </a>
+                                <div class="home-product-item__detail mt-12 mb-16">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name">huyền nguyễn</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                    <div class="home-product-item__comment">
+                                        <i class="home-product-item__comment-icon ti-comment"></i>
+                                        <div class="home-product-item__comment-quantity">0</div>
+                                    </div>
+                                </div>
+                                <p class="home-product-item-desc">Can Gio Considered as the "jewel" of ecotourism, Can Gio island is only about 50km from the city center. Therefore, this is a favorite stop for many people every weekend....</p>
+                                <a href="#" class="home-product-item__btn">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Product 2 -->
+                         <div class="row mb-30">
+                            <div class="col l-6 m-6 c-12">
+                                <a href="#" class="home-product-item__img" style="background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/08/8-experiences-that-make-you-forget-about-waiting-at-Changi-350x250.jpg);">
+                                    <span class="home-product-item__title-top">TRAVELHOLIC</span>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <a href="" class="home-product-item__row2-link">
+                                    <h2 class="home-product-item__row2-heading">8 experiences that make you forget about waiting at Changi Airport, Singapore</h2>                              
+                                </a>
+                                <div class="home-product-item__detail mt-12 mb-16">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> NA</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                    <div class="home-product-item__comment">
+                                        <i class="home-product-item__comment-icon ti-comment"></i>
+                                        <div class="home-product-item__comment-quantity">0</div>
+                                    </div>
+                                </div>
+                                <p class="home-product-item-desc">Recently, Skytrax - The British aviation rating and rating organization has announced the ranking of the world's top airports in 2021 and of course. Changi Airport of Singapore must definitely... </p>
+                                <a href="#" class="home-product-item__btn">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                         <!-- Product 2 -->
+                         <div class="row mb-30">
+                            <div class="col l-6 m-6 c-12">
+                                <a href="#" class="home-product-item__img" style="background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/08/Come-to-Ha-Giang-to-enjoy-unique-but-strange-mouth-350x250.jpg);">
+                                    <span class="home-product-item__title-top">TRAVELHOLIC</span>
+                                </a>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <a href="" class="home-product-item__row2-link">
+                                    <h2 class="home-product-item__row2-heading">Come to Ha Giang to enjoy ‘unique but strange mouth’ porridge</h2>
+                                </a>
+                                <div class="home-product-item__detail mt-12 mb-16">
+                                    <div class="home-product-item__author">BY <span class="home-product-item__author-name"> NGUYEN</span></div>
+                                    <div class="home-product-item__time">
+                                        <i class="home-product-item__time-icon ti-alarm-clock"></i>
+                                        <span class="home-product__time-day"> AUGUST 12, 2021</span>
+                                    </div>
+                                    <div class="home-product-item__comment">
+                                        <i class="home-product-item__comment-icon ti-comment"></i>
+                                        <div class="home-product-item__comment-quantity">0</div>
+                                    </div>
+                                </div>
+                                <p class="home-product-item-desc">The tuber, also known as the head and father, is known as a poisonous tuber that grows in the high mountains with a cold climate. However, it has a pungent... </p>
+                                <a href="#" class="home-product-item__btn">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">6</a>
+                            </li>
+                            
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Home-product__tag -->
+                    <div class="col l-4">
+                        <a href="" class="home-product__tag">a beautiful cafe </a>
+                        <a href="" class="home-product__tag">Beautiful tourist spot</a>
+                        <a href="" class="home-product__tag">Beefsteak</a>
+                        <a href="" class="home-product__tag">Cafe</a>
+                        <a href="" class="home-product__tag">Cooking</a>
+                        <a href="" class="home-product__tag">recipe</a>
+                        <a href="" class="home-product__tag">cuisine</a>
+                        <a href="" class="home-product__tag">Culinary</a>
+                        <a href="" class="home-product__tag"> Da Lat</a>
+                        <a href="" class="home-product__tag">Delicious</a>
+                        <a href="" class="home-product__tag"> in Hanoi</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">travel</a>
+                        <a href="" class="home-product__tag">Good</a>
+                        <a href="" class="home-product__tag">in Saigon</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">Cuisine</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">homestay</a>
+                        <a href="" class="home-product__tag">Hue</a>
+                        <a href="" class="home-product__tag">Tourism</a>
+                        <a href="" class="home-product__tag">Lunar</a>
+                        <a href="" class="home-product__tag"> New Year</a>
+                        <a href="" class="home-product__tag">Nice</a>
+                        <a href="" class="home-product__tag">delicacies</a>
+                        <a href="" class="home-product__tag">Southeast</a>
+                        <a href="" class="home-product__tag">Street</a>
+                        <a href="" class="home-product__tag"> Da Lat</a>
+                        <a href="" class="home-product__tag">Delicious</a>
+                        <a href="" class="home-product__tag"> in Hanoi</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">travel</a>
+                        <a href="" class="home-product__tag">Good</a>
+                        <a href="" class="home-product__tag">in Saigon</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">Cuisine</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">travel</a>
+                        <a href="" class="home-product__tag">Good</a>
+                        <a href="" class="home-product__tag">in Saigon</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">Cuisine</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">homestay</a>
+                        <a href="" class="home-product__tag">Hue</a>
+                        <a href="" class="home-product__tag">Tourism</a>
+                        <a href="" class="home-product__tag">Lunar</a>
+                        <a href="" class="home-product__tag"> New Year</a>
+                        <a href="" class="home-product__tag">Nice</a>
+                        <a href="" class="home-product__tag">delicacies</a>
+                        <a href="" class="home-product__tag">Southeast</a>
+                        <a href="" class="home-product__tag">Street</a>
+                        <a href="" class="home-product__tag"> Da Lat</a>
+                        <a href="" class="home-product__tag">Delicious</a>
+                        <a href="" class="home-product__tag"> in Hanoi</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">travel</a>
+                        <a href="" class="home-product__tag">Good</a>
+                        <a href="" class="home-product__tag">in Saigon</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">Cuisine</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">homestay</a>
+                        <a href="" class="home-product__tag">Hue</a>
+                        <a href="" class="home-product__tag">Tourism</a>
+                        <a href="" class="home-product__tag">Lunar</a>
+                        <a href="" class="home-product__tag"> New Year</a>
+                        <a href="" class="home-product__tag">Nice</a>
+                        <a href="" class="home-product__tag">delicacies</a>
+                        <a href="" class="home-product__tag">Southeast</a>
+                        <a href="" class="home-product__tag">Street</a>
+                        <a href="" class="home-product__tag"> Da Lat</a>
+                        <a href="" class="home-product__tag">Delicious</a>
+                        <a href="" class="home-product__tag"> in Hanoi</a>
+                        <a href="" class="home-product__tag">Economical</a> 
+                        <a href="" class="home-product__tag"> in Hanoi</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">travel</a>
+                        <a href="" class="home-product__tag">Good</a>
+                        <a href="" class="home-product__tag">in Saigon</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">Cuisine</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">homestay</a>
+                        <a href="" class="home-product__tag">Hue</a>
+                        <a href="" class="home-product__tag">Tourism</a>
+                        <a href="" class="home-product__tag">Lunar</a>
+                        <a href="" class="home-product__tag"> New Year</a>
+                        <a href="" class="home-product__tag">Nice</a>
+                        <a href="" class="home-product__tag"> in Hanoi</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">Economical</a>
+                        <a href="" class="home-product__tag">travel</a>
+                        <a href="" class="home-product__tag">Good</a>
+                        <a href="" class="home-product__tag">in Saigon</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">Cuisine</a>
+                        <a href="" class="home-product__tag">Hanoi</a>
+                        <a href="" class="home-product__tag">homestay</a>
+                        <a href="" class="home-product__tag">Hue</a>
+                        <a href="" class="home-product__tag">Tourism</a>
+                        <a href="" class="home-product__tag">Lunar</a>
+                        <a href="" class="home-product__tag"> New Year</a>
+                        <a href="" class="home-product__tag">Nice</a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="grid__border grid__border-color"></div>
+        
+        <div class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-2-4 m-6 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Ticket Mall</a>
+                            </li>
+                            <li class="footer-item">    
+                                <a href="" class="footer-item__link">Điều Khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-6 c-6">
+                        <h3 class="footer__heading">Giới Thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản sử dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-6 c-6">
+                        <h3 class="footer__heading">Danh Mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Trang điểm mặt
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Trang điểm môi
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Trang điểm da
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-6 c-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook-square"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram-square"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                   
+                    <div class="col l-2-4 m-6 c-12">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/images/footer__dowload-qr.png" alt="Download QR" class="footer__dowload-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link mb-8">
+                                    <img src="./assets/images/google-play.png" alt="Google Play" class="footer__download-app-img ">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/images/app-store.png" alt="App Store" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+
+
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <div class="row">
+                        <p class="footer__text">© Xin Chào Các Bạn Mình Là Nguyễn Ngọc Ánh - 20GIT - VKU DA NANG - VIET NAM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- End: App-->
+    
+    <!-- Modal layout -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div> 
+        <div class="modal__body"> -->
+            <!-- Login form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Welcome Back!</h3>
+                        <div class="auth-form__sub-heading">Login to your accout below</div>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" name="" class="auth-form__input" required placeholder="Username">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" name="" class="auth-form__input" required placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__check">
+                        <input type="checkbox" name="" id="" required>
+                        <p class="auth-form__check-name">Remember Name</p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="auth-form__controls-btn">Log In</button>
+                    </div>
+
+                    <a href="" class="auth-form__forget">
+                        Forgotten Password?
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="auth-form__btn-close">
+                <i class="auth-form__btn-close-icon ti- close"></i>
+            </a>
+        </div>
+    </div> -->
+
+</body>
+</html>
